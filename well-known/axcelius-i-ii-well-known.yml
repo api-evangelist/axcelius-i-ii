@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: live HTTP probes of https://axcelius.com/
+host: https://axcelius.com
+result: none
+notes: >-
+  No .well-known discovery surface is published. Every probed path returned 404, including
+  /robots.txt, which is consistent with the host serving only a static 386-byte holding page.
+  Recorded so a later re-run can detect a change. No WellKnown, SecurityTxt, or APICatalog pointer
+  is wired in apis.yml because none of these documents exist.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /robots.txt
+  status: 404

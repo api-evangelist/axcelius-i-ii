@@ -1,21 +1,67 @@
 aid: axcelius-i-ii
-name: Axcelius I Ii
-description: Axcelius I Ii is a company surfaced as a portfolio company of canaan-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/axcelius-i-ii.png
+name: Axcelius I/II
+description: >-
+  Axcelius I/II is a biopharmaceutical company-creation vehicle backed by Canaan Partners, formed to
+  found and incubate drug-development companies pursuing treatments for cancer, rare diseases, and
+  neurodegenerative disorders. It is led by managing partner Dennis Podlesak and sponsored at Canaan
+  by general partner Brent Ahrens, and operates from San Francisco, California, with an associated
+  holding entity registered in Connecticut at Canaan's Westport office. Rather than operating as a
+  product company, Axcelius assembles management teams and capital around licensed therapeutic assets
+  and spins them out as standalone biopharma companies; Transposon Therapeutics, developing therapies
+  for ALS and Alzheimer's disease, is its best-documented creation. As of this enrichment pass the
+  vehicle remains in stealth mode with no public developer surface -- no product website beyond a
+  holding page, no documentation, developer portal, SDKs, GitHub organization, or API of any kind.
 url: https://raw.githubusercontent.com/api-evangelist/axcelius-i-ii/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - canaan-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: stealth-company-creation-vehicle-no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Venture Capital
+- Company Creation
+- Biopharmaceutical
+- Life Sciences
+- Drug Discovery
+- Oncology
+- Rare Disease
+- Neurodegenerative Disease
+- Stealth
 apis: []
+common:
+- type: DomainSecurity
+  url: security/axcelius-i-ii-domain-security.yml
+- type: Website
+  url: https://axcelius.com/
+  x-verification: >-
+    Unconfirmed attribution. axcelius.com serves only a 386-byte "AXCELIUS" holding page (HTTP 200,
+    GoDaddy hosting). Registered 2019-07-31, three weeks before Axcelius Holding Company, LLC was
+    registered in Connecticut (2019-08-20) at Canaan Partners' Westport office; WHOIS registrant is
+    privacy protected. Timing and naming corroborate but do not prove the association.
+- type: InvestorProfile
+  url: https://www.canaan.com/companies/axcelius-i-ii
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
